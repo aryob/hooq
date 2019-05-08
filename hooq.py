@@ -2,8 +2,7 @@ try:
 	import mechanize,os,sys,time
 	
 	print("""\033
-(+) HALLO hhh\\
-(+) Contoh no hp : 0821*******
+(+) Contoh no hp : 085********
 """)
 	br = mechanize.Browser()
 	br.set_handle_equiv(True)
@@ -22,8 +21,8 @@ try:
 		res=br.submit().read()
 		#print(res)
 		if 'confirmotp' in str(res):
-			print(i+1,"berhasil y kntl")
-		else: print(i+1,"gagal y hhh")
+			print(i+1,"berhasil y")
+		else: print(i+1,"gagal y")
 		#return True
 	no=int(input("[?] Nomor target: "))
 	jlm=int(input("[?] jumlah: "))
